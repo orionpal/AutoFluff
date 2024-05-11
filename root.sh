@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Change directory to the location of your Python file
+cd C:/Users/13472/Desktop/AutoGitFluff/AutoFluff
+
 # Define variables
 PYTHON_FILE="function.py"
 GITHUB_REPO="https://github.com/orionpal/AutoFluff.git"

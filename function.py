@@ -1,11 +1,20 @@
 import subprocess
 import re
+from nltk.corpus import words
+import random
+
+word_list = words.words()
+using_llm = False
+
+
 def main():
     # generate 2 random words
-    prompt = "Generate two random words please"
-    two_words_sentence = get_prompt_response(prompt)
-    pattern = r'"([^"]*)"'
-    two_words = re.findall(pattern, two_words_sentence)
+    two_words = random.sample(word_list, 2)
+    if using_llm:
+        prompt = "Generate two random words please"
+        two_words_sentence = get_prompt_response(prompt)
+        pattern = r'"([^"]*)"'
+        two_words = re.findall(pattern, two_words_sentence)
     # make a txt file for each
     for word in two_words:
         # write a little paragraph too
@@ -31,8 +40,10 @@ def create_text_file(file_name):
     with open(file_name, 'w') as file:
         # Write some content to the first text file
         print("trying to make file for " + file_name)
-        prompt = "Can you write a little something about " + file_name + ". Could be anything related."
-        content = get_prompt_response(prompt)
+        content = "Hey man I'm trying something here"
+        if using_llm:
+            prompt = "Can you write a little something about " + file_name + ". Could be anything related."
+            content = get_prompt_response(prompt)
         file.write(content)
 
 
