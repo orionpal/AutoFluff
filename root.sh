@@ -43,4 +43,4 @@ fi
 
 git add .
 git commit -m "Did some stuff using $random_word"
-git push origin main
+git push origin master
