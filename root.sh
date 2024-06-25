@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Navigate to GitHub repository
+# Repository and log file paths
 REPOSITORY_PATH=/Users/orionpal/Desktop/Projects/AutoFluff
 LOG_FILE=$REPOSITORY_PATH/cron.log
+
+# Navigate to GitHub repository
 cd "$REPOSITORY_PATH" || { echo "[$(date)] Failed to navigate to repo" >> "$LOG_FILE"; exit 1; }
 
 # Files containing words and definitions
@@ -34,14 +36,14 @@ if [ -n "$line_number" ]; then
     /Defn:/ {
         flag=1
         sub(/.*Defn: */, "")
-        print > "'$random_word.txt'"
+        print > "'$REPOSITORY_PATH'/'$random_word.txt'"
         next
     }
     flag {
         if (/^$/) exit
-        print >> "'$random_word.txt'"
+        print >> "'$REPOSITORY_PATH'/'$random_word.txt'"
     }'
-    echo "[$(date)] Definition for $random_word written to $random_word.txt" >> "$LOG_FILE"
+    echo "[$(date)] Definition for $random_word written to $REPOSITORY_PATH/$random_word.txt" >> "$LOG_FILE"
 else
     # Remove the line from words.txt if the word is not found in the dictionary
     awk 'NR != '$random_line'' "$WORDS_FILE" > temp && mv temp "$WORDS_FILE"
