@@ -8,3 +8,12 @@ sed: /Users/orionpal/Desktop/Projects/AutoFluff/words_file.txt: No such file or 
 [Tue Jun 25 11:41:00 EDT 2024] Random word: 
 /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 33: /usr/bin/tail: Argument list too long
 [Tue Jun 25 11:41:01 EDT 2024] Definition for  written to .txt
+[master 103020c] Did some stuff using
+ 4 files changed, 34 insertions(+), 14 deletions(-)
+ create mode 100644 cron.log
+ rename dictionary.txt => dictionary_file.txt (100%)
+ rename words.txt => words_files.txt (100%)
+fatal: could not read Username for 'https://github.com': Device not configured
+[Tue Jun 25 11:41:02 EDT 2024] Script execution completed
+[Tue Jun 25 11:42:00 EDT 2024] Random word: fascination
+[Tue Jun 25 11:42:01 EDT 2024] Definition for fascination written to fascination.txt
