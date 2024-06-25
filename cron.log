@@ -1,27 +1,2 @@
-/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
-/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
-/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
-/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
-/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 13: /Users/orionpal/Desktop/Projects/AutoFluff/words_file.txt: No such file or directory
-/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 16: RANDOM % line_count + 1: division by 0 (error token is "+ 1")
-sed: /Users/orionpal/Desktop/Projects/AutoFluff/words_file.txt: No such file or directory
-[Tue Jun 25 11:41:00 EDT 2024] Random word: 
-/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 33: /usr/bin/tail: Argument list too long
-[Tue Jun 25 11:41:01 EDT 2024] Definition for  written to .txt
-[master 103020c] Did some stuff using
- 4 files changed, 34 insertions(+), 14 deletions(-)
- create mode 100644 cron.log
- rename dictionary.txt => dictionary_file.txt (100%)
- rename words.txt => words_files.txt (100%)
-fatal: could not read Username for 'https://github.com': Device not configured
-[Tue Jun 25 11:41:02 EDT 2024] Script execution completed
-[Tue Jun 25 11:42:00 EDT 2024] Random word: fascination
-[Tue Jun 25 11:42:01 EDT 2024] Definition for fascination written to fascination.txt
-[master 8f198a0] Did some stuff using fascination
- 3 files changed, 13 insertions(+)
- create mode 100644 fascination.txt
- rename words_files.txt => words_file.txt (100%)
-fatal: could not read Username for 'https://github.com': Device not configured
-[Tue Jun 25 11:42:02 EDT 2024] Script execution completed
-[Tue Jun 25 12:40:00 EDT 2024] Random word: ahorse
-[Tue Jun 25 12:40:00 EDT 2024] Word not found in dictionary. Line removed from words.txt.
+[Tue Jun 25 12:42:00 EDT 2024] Random word: hyphenated
+[Tue Jun 25 12:42:01 EDT 2024] Definition for hyphenated written to /Users/orionpal/Desktop/Projects/AutoFluff/hyphenated.txt
