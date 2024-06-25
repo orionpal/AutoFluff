@@ -1,0 +1,10 @@
+/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
+/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
+/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
+/bin/bash: /Users/orionpal/Desktop/Projects/AutoFluff/root.sh: Operation not permitted
+/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 13: /Users/orionpal/Desktop/Projects/AutoFluff/words_file.txt: No such file or directory
+/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 16: RANDOM % line_count + 1: division by 0 (error token is "+ 1")
+sed: /Users/orionpal/Desktop/Projects/AutoFluff/words_file.txt: No such file or directory
+[Tue Jun 25 11:41:00 EDT 2024] Random word: 
+/Users/orionpal/Desktop/Projects/AutoFluff/root.sh: line 33: /usr/bin/tail: Argument list too long
+[Tue Jun 25 11:41:01 EDT 2024] Definition for  written to .txt
