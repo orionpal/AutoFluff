@@ -583,7 +583,6 @@ acetate
 acetic
 acetone
 acetonic
-acetophenetidin
 acetose
 acetous
 acetyl
