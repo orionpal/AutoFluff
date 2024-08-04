@@ -20719,7 +20719,6 @@ elizabeth
 elizabethan
 elk
 ell
-elli
 ellipse
 ellipsis
 ellipsoid
